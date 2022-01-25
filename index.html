@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=VT323:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Coiny:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite:regular" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Crypto - ONE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/crypto-img.ico"
+    />
+  </head>
+  <body>
+    <h1 class="titulo">CRIPTOGRAFIA</h1>
+    <main class="main">
+      <section  id="mensagem">
+        <form action="">
+          <label for="input-texto">Apenas letras minúsculas, sem acento!</label>
+          <input
+            class="text-input"
+            type="text"
+            name="input-texto"
+            id="input-texto"
+            placeholder="insira o seu segredo aqui"
+          />
+          <input
+            class="btn"
+            type="button"
+            value="CRIPTOGRAFAR"
+            id="btn-cripto"
+            onclick="encoder()"
+          />
+          <input
+            class="btn"
+            type="button"
+            value="DESCRIPTOGRAFAR"
+            id="btn-descripto"
+            onclick="decoder()"
+          />
+        </form>
+      </section>
+
+      <section class="msg box">   
+        <label id="msg-label" style="display: none;">Mensagem criptografada:</label>
+        <input class="text-input" type="text" id="msg" style="display: none;" />
+        <input class="btn" type="submit" value="COPIAR" id="btn-copy" onclick="copiar()" style="display: none;" />
+        <input class="btn" type="button" value="LIMPAR" id="btn-clear" onclick="limpar()" style="display: none;" />
+          <img src="./assets/img-msg.svg" alt="" id="img-msg-cripto">
+          <span id="msg-cripto">Nenhuma mensagem encontrada... Digite um texto para criptografar!</span>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p>Desenvolvido por Érica Nunes &copy; 2022</p>
+        <p><a href="https://www.alura.com.br/challenges/oracle-one/semana01e02-construa-decodificador-texto-com-javascript" target="_blank">Challenge Alura - Oracle One</a></p>
+      </div>
+      <div id="flex-end">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/%C3%A9rica-nunes-146a2b5a/" target="_blank"
+              ><i style="font-size: 24px" class="fa">&#xf08c;</i></a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/ericafnunes" target="_blank"
+              ><i style="font-size:24px" class="fa">&#xf09b;</i></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
