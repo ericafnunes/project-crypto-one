@@ -1,9 +1,9 @@
 let btnCodificar = document.getElementById("btn-cripto");
 let btnDecodificar = document.getElementById("btn-descripto");
-let btnCopiar = document.getElementById("btn-copy");
 let inputMensagem = document.getElementById("input-texto");
 let inputMensagemCryptografada = document.getElementById("msg");
 let btnLimpar = document.getElementById("#btn-clear");
+let btnCopiar = document.getElementById("btn-copy");
 
 function limpar() {
   inputMensagemCryptografada.value = "";
